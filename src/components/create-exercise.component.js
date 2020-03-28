@@ -7,6 +7,8 @@ export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
 
+    this.userRef = React.createRef();
+
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeDuration = this.onChangeDuration.bind(this);
@@ -85,7 +87,8 @@ export default class CreateExercise extends Component {
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 
             <label>Username: </label>
-            <select ref="userInput"
+
+            <select ref={this.userInput}
                 required
                 className="form-control"
                 value={this.state.username}
