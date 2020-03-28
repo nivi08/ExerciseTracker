@@ -1,3 +1,7 @@
+nodemon server in backend folder to run server
+
+npmstart in root to start front end
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
